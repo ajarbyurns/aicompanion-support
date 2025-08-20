@@ -1,75 +1,64 @@
 <!DOCTYPE html>
-</div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Companion</title>
+</head>
+<body style="font-family: sans-serif; line-height: 1.6; margin: 2rem; max-width: 800px;">
+<header>
+<h1>AI Companion</h1>
+<nav>
+<a href="#home">Home</a> |
+<a href="#support">Support</a> |
+<a href="https://github.com/ajarbyurns/aicompanion-support">GitHub</a>
+</nav>
+<hr>
+</header>
+
+<section id="home">
+<h2>Meet Your AI Companion</h2>
+<p>A personal AI friend you can talk to anytime. Fully offline, private, and designed to make conversations fun and engaging.</p>
+
+<h3>Features</h3>
+<ul>
+<li>Works offline – no internet required</li>
+<li>Real-time text and voice conversations</li>
+<li>Anime-inspired 3D character</li>
+<li>Privacy first – your data stays on your device</li>
+</ul>
+</section>
+
+<hr>
 
 
-<div class="section">
-<div class="panel">
-<h2 style="margin-top:0">FAQ</h2>
-<div class="faq">
-<details>
-<summary>Does it work offline?</summary>
-<p class="muted">Yes, everything works offline. None of the features require internet.</p>
-</details>
-<details>
-<summary>The app uses a lot of storage. Why?</summary>
-<p class="muted">A lot of AI models were used in this app - LLM, TTS, Emotion Classifier. In addition to that, a few external libraries were used</p>
-</details>
-<details>
-<summary>Microphone isn’t detected</summary>
-<p class="muted">Go to <em>System Settings → Privacy & Security → Microphone</em> and ensure AI Companion is allowed. Restart the app after changing permissions.</p>
-</details>
-</div>
-</div>
-</div>
+<section id="support">
+<h2>Support</h2>
 
 
-<div class="section">
-<div class="panel">
-<h2 style="margin-top:0">Privacy</h2>
-<p class="muted">Your words are yours. Everything done by users in the app stays in the app.</p>
-</div>
-</div>
+<h3>FAQ</h3>
+<p><strong>Does it work offline?</strong><br>Yes, everything works offline. None of the features require internet.</p>
 
 
-<div class="section">
-<div class="panel">
-<h2 style="margin-top:0">Contact</h2>
-<p class="muted">Email <a href="mailto:ajarbyurns@gmail.com">ajarbyurns@gmail.com</a> or open a GitHub issue.</p>
-</div>
-</div>
+<p><strong>The app uses a lot of storage. Why?</strong><br>The app includes multiple AI models – LLM, TTS, and an Emotion Classifier. These require extra space.</p>
+
+
+<p><strong>Microphone isn’t detected</strong><br>Go to <em>System Settings → Privacy & Security → Microphone</em> and allow AI Companion. Restart the app after changing permissions.</p>
+
+
+<h3>Privacy</h3>
+<p>Your words are yours. Everything you do in the app stays in the app.</p>
+
+
+<h3>Contact</h3>
+<p>Email: <a href="mailto:ajarbyurns@gmail.com">ajarbyurns@gmail.com</a><br>
+Or open an issue on <a href="https://github.com/ajarbyruns/aicompanion-support">GitHub</a>.</p>
 </section>
 
 
+<hr>
 <footer>
-<div class="container">
-<div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-<span>© <span id="year"></span> AI Companion</span>
-<div style="display:flex; gap:12px;">
-<a class="muted" href="#support">Support</a>
-<a class="muted" href="https://github.com/ajarbyurns/aicompanion-support" target="_blank" rel="noopener">GitHub</a>
-<a class="muted" href="#home">Home</a>
-</div>
-</div>
-</div>
+<p>© AI Companion</p>
 </footer>
-
-
-<script>
-// Basic hash routing (single-file site): #home or #support
-function route(){
-const hash = (location.hash || '#home').toLowerCase();
-const home = document.getElementById('home');
-const support = document.getElementById('support');
-const nHome = document.getElementById('nav-home');
-const nSupp = document.getElementById('nav-support');
-const isSupport = hash.includes('support');
-home.classList.toggle('hide', isSupport);
-support.classList.toggle('hide', !isSupport);
-nHome.classList.toggle('active', !isSupport);
-nSupp.classList.toggle('active', isSupport);
-}
-window.addEventListener('hashchange', route);
-window.addEventListener('DOMContentLoaded', () => { route(); document.getElementById('year').textContent = new Date().getFullYear(); });
-</script>
 </body>
 </html>
