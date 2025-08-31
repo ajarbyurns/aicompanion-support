@@ -13,8 +13,8 @@ Your personal AI companion — chat, connect, and experience a virtual friend th
 - Private & secure – your data stays yours
 - Works offline
 
-## 📥 Download
-- (Coming Soon)
+## 📥 Download (iOS or MacOS)
+- [HERE](https://apps.apple.com/app/buddybot-ai-companion/id6751270165)
 
-## 🚀 Setup for Developers
-1. (Coming Soon)
+## 🚀 Source Code
+[HERE](https://github.com/ajarbyurns/BuddyBot---AI-Companion)
