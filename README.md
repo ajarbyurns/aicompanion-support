@@ -17,4 +17,4 @@ Your personal AI companion — chat, connect, and experience a virtual friend th
 - [HERE](https://apps.apple.com/app/buddybot-ai-companion/id6751270165)
 
 ## 🚀 Source Code
-[HERE](https://github.com/ajarbyurns/BuddyBot---AI-Companion)
+- [HERE](https://github.com/ajarbyurns/BuddyBot---AI-Companion)
